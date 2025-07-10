@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EnDasmu NFT Marketplace</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    body { font-family: 'Montserrat', Arial, sans-serif; }
+  </style>
+</head>
+<body class="bg-dark text-white">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-4">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="#">EnDasmu</a>
+      <div class="navbar-nav ms-auto gap-3">
+        <a class="nav-link text-white" href="#">Collection</a>
+        <a class="nav-link text-white" href="#">Market Place</a>
+        <a class="nav-link text-white" href="#">Community</a>
+        <a class="btn btn-outline-light rounded-pill px-4" href="#">Connect Wallet</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="container py-5 d-flex align-items-center justify-content-between flex-wrap flex-md-nowrap" style="min-height: 70vh;">
+    <div class="col-md-6" data-aos="fade-right">
+      <h1 class="display-3 fw-bold mb-4">Discover<br>Digital Art and<br>Collect NFTs.</h1>
+      <p class="lead mb-4">EnDasmu is a shared liquidity NFT market smart contract which is used by multiple websites to provide the users the best possible experience.</p>
+      <div class="d-flex gap-3">
+        <button class="btn btn-primary btn-lg rounded-pill px-4 shadow" id="getStartedBtn">Get Started</button>
+        <button class="btn btn-outline-light btn-lg rounded-pill px-4">Learn More <i class="fas fa-arrow-right ms-2"></i></button>
+      </div>
+    </div>
+    <div class="col-md-5 text-center mt-5 mt-md-0" data-aos="fade-left">
+      <div class="hero-img-bg position-relative d-inline-block">
+        <img src="assets/images/African.jpeg" alt="Hero" class="img-fluid rounded-circle shadow-lg hero-img" style="width: 350px; height: 350px; object-fit: cover;">
+        <span class="position-absolute top-0 start-0 translate-middle bg-success rounded-circle" style="width: 60px; height: 60px; left: 10%; top: 10%; opacity: 0.5;"></span>
+        <span class="position-absolute bottom-0 end-0 translate-middle bg-warning rounded-circle" style="width: 40px; height: 40px; right: 10%; bottom: 10%; opacity: 0.4;"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Stats Section -->
+  <section class="container my-5" data-aos="fade-up">
+    <div class="row g-4 justify-content-center bg-black bg-opacity-50 rounded-4 py-4 shadow">
+      <div class="col-6 col-md-3 text-center">
+        <h4 class="fw-bold">Artwork</h4>
+        <p class="fs-3">27k+</p>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <h4 class="fw-bold">Auction</h4>
+        <p class="fs-3">25k+</p>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <h4 class="fw-bold">Artist</h4>
+        <p class="fs-3">12k+</p>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <h4 class="fw-bold">Art</h4>
+        <p class="fs-3">3.4 ETH</p>
+        <div class="d-flex justify-content-center gap-1 mt-2">
+          <img src="assets/images/download (1).jpeg" class="rounded-circle border border-2" style="width: 40px; height: 40px; object-fit: cover;">
+          <img src="assets/images/download (2).jpeg" class="rounded-circle border border-2" style="width: 40px; height: 40px; object-fit: cover;">
+          <img src="assets/images/download (3).jpeg" class="rounded-circle border border-2" style="width: 40px; height: 40px; object-fit: cover;">
+          <img src="assets/images/Photo by Sirio on Unsplash.jpeg" class="rounded-circle border border-2" style="width: 40px; height: 40px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending Section -->
+  <section class="container my-5" data-aos="fade-up">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="row g-3">
+          <div class="col-6">
+            <img src="assets/images/download (1).jpeg" class="img-fluid rounded-4 shadow" alt="Trending 1">
+          </div>
+          <div class="col-6">
+            <img src="assets/images/download (2).jpeg" class="img-fluid rounded-4 shadow" alt="Trending 2">
+          </div>
+          <div class="col-6">
+            <img src="assets/images/New tutorial about photoshop.jpeg" class="img-fluid rounded-4 shadow" alt="Trending 3">
+          </div>
+          <div class="col-6">
+            <img src="assets/images/Photo by Camilla Carvalho on Unsplash (1).jpeg" class="img-fluid rounded-4 shadow" alt="Trending 4">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 ps-md-5">
+        <span class="text-success fw-bold">Popular Item</span>
+        <h2 class="display-5 fw-bold mt-2 mb-3">Hot Trending<br>On This Week.</h2>
+        <p class="mb-4">Various kinds of NFTs that are trending, the trend will be reset every week. Don’t miss out on the best NFTs every week.</p>
+        <a href="#" class="btn btn-outline-light rounded-pill px-4">See all <i class="fas fa-arrow-right ms-2"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top List Artist Section -->
+  <section class="container my-5" data-aos="fade-up">
+    <span class="text-success fw-bold">Artist</span>
+    <h2 class="display-5 fw-bold mt-2 mb-3">Top List Artist.</h2>
+    <p class="mb-5">We have dozens of artists who contribute to create amazing works</p>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-4">
+        <div class="card bg-dark border-0 rounded-4 shadow text-center p-4">
+          <img src="assets/images/download (1).jpeg" class="rounded-circle mx-auto mb-3" style="width: 80px; height: 80px; object-fit: cover;">
+          <h5 class="fw-bold mb-1">Johnny Five</h5>
+          <span class="text-secondary">Bitcoin Survey, March '22</span>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark border-0 rounded-4 shadow text-center p-4">
+          <img src="assets/images/Photo by Camilla Carvalho on Unsplash (1).jpeg" class="rounded-circle mx-auto mb-3" style="width: 80px; height: 80px; object-fit: cover;">
+          <h5 class="fw-bold mb-1">Lucinta Luna</h5>
+          <span class="text-secondary">Bitcoin Survey, March '22</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners/Brands Section -->
+  <section class="container my-5" data-aos="fade-up">
+    <div class="d-flex flex-wrap justify-content-center align-items-center gap-5 py-4">
+      <img src="assets/images/Tailwind CSS - Rapidly build modern websites without ever leaving your HTML_.jpeg" alt="Brand 1" style="height: 40px;">
+      <img src="assets/images/Photo by Sirio on Unsplash.jpeg" alt="Brand 2" style="height: 40px;">
+      <img src="assets/images/African.jpeg" alt="Brand 3" style="height: 40px;">
+      <img src="assets/images/download (2).jpeg" alt="Brand 4" style="height: 40px;">
+    </div>
+  </section>
+
+  <!-- Subscribe Section -->
+  <section class="container my-5 text-center" data-aos="fade-up">
+    <h2 class="display-5 fw-bold mb-3">Subscribe to Get Fresh News Update About NFTs.</h2>
+    <button class="btn btn-success btn-lg rounded-pill px-5 shadow">Subscribe</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black bg-opacity-75 text-white py-5 mt-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-3 mb-3">
+          <h5 class="fw-bold mb-3">EnDasmu</h5>
+          <p class="small text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+          <div class="d-flex gap-2">
+            <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#"><i class="fab fa-telegram fa-lg"></i></a>
+            <a href="#"><i class="fab fa-discord fa-lg"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-bold mb-3">Explore</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-secondary">Art</a></li>
+            <li><a href="#" class="text-secondary">Collectibles</a></li>
+            <li><a href="#" class="text-secondary">Domain Name</a></li>
+            <li><a href="#" class="text-secondary">Utility</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-bold mb-3">Statistic</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-secondary">Ranking</a></li>
+            <li><a href="#" class="text-secondary">Activity</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-bold mb-3">Resource</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-secondary">Help Center</a></li>
+            <li><a href="#" class="text-secondary">Platform Status</a></li>
+            <li><a href="#" class="text-secondary">Partners</a></li>
+            <li><a href="#" class="text-secondary">Blog</a></li>
+            <li><a href="#" class="text-secondary">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6 class="fw-bold mb-3">Company</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-secondary">About Us</a></li>
+            <li><a href="#" class="text-secondary">Career</a></li>
+            <li><a href="#" class="text-secondary">Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="small text-secondary mb-0">Copyright © MetaSpace 2022</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: true });
+    anime({
+      targets: '.hero-img',
+      scale: [0.8, 1],
+      opacity: [0, 1],
+      duration: 1200,
+      delay: 300,
+      easing: 'easeOutExpo'
+    });
+    anime({
+      targets: '#getStartedBtn',
+      translateY: [40, 0],
+      opacity: [0, 1],
+      duration: 1000,
+      delay: 600,
+      easing: 'easeOutExpo'
+    });
+  </script>
+</body>
+</html>
