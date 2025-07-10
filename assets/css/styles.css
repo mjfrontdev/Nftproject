@@ -102,3 +102,33 @@ footer a:hover {
   background: #96C575;
   border-radius: 4px;
 }
+
+/* Glassmorphism for auth forms */
+.auth-glass-card {
+  background: rgba(30, 34, 40, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 2rem !important;
+  border: 1.5px solid rgba(255,255,255,0.12);
+}
+.auth-glass-input {
+  background: rgba(255,255,255,0.08) !important;
+  border: 1.5px solid rgba(255,255,255,0.18) !important;
+  color: #fff !important;
+  border-radius: 1.5rem !important;
+  box-shadow: 0 2px 8px 0 rgba(31,38,135,0.08);
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.auth-glass-input:focus {
+  background: rgba(255,255,255,0.18) !important;
+  border: 1.5px solid #E8D052 !important;
+  box-shadow: 0 0 0 2px #E8D05244;
+  color: #fff !important;
+}
+.auth-glass-input::placeholder {
+  color: #e8e8e8cc !important;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  opacity: 1;
+}

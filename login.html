@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | EnDasmu NFT Marketplace</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css">
+  <style>body { font-family: 'Montserrat', Arial, sans-serif; }</style>
+</head>
+<body class="bg-dark text-white">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-4">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="index.html">EnDasmu</a>
+      <div class="navbar-nav ms-auto gap-3">
+        <a class="nav-link text-white" href="index.html">Home</a>
+        <a class="nav-link text-white" href="collection.html">Collection</a>
+        <a class="nav-link text-white" href="marketplace.html">Market Place</a>
+        <a class="nav-link text-white" href="community.html">Community</a>
+        <a class="btn btn-outline-light rounded-pill px-4" href="connectwallet.html">Connect Wallet</a>
+        <a class="btn btn-outline-light rounded-pill px-3" href="login.html">Login</a>
+        <a class="btn btn-primary rounded-pill px-3" href="signup.html">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login Form Section -->
+  <section class="container d-flex align-items-center justify-content-center" style="min-height: 80vh;">
+    <div class="col-md-6 col-lg-5">
+      <div class="card p-4 shadow rounded-4 auth-glass-card" id="loginCard">
+        <h2 class="fw-bold mb-4 text-center">Login to Your Account</h2>
+        <form id="loginForm" autocomplete="off">
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control auth-glass-input" id="loginEmail" required placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Password</label>
+            <input type="password" class="form-control auth-glass-input" id="loginPassword" required placeholder="Enter your password">
+          </div>
+          <button type="submit" class="btn btn-primary w-100 rounded-pill mt-3">Login</button>
+          <div class="text-center mt-3">
+            <span class="text-secondary">Don't have an account?</span>
+            <a href="signup.html" class="text-success fw-bold">Sign Up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black bg-opacity-75 text-white py-5 mt-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-3 mb-3">
+          <h5 class="fw-bold mb-3">EnDasmu</h5>
+          <p class="small text-secondary">Login to access your NFT dashboard and collections.</p>
+          <div class="d-flex gap-2">
+            <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#"><i class="fab fa-telegram fa-lg"></i></a>
+            <a href="#"><i class="fab fa-discord fa-lg"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-bold mb-3">Explore</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-secondary">Art</a></li>
+            <li><a href="#" class="text-secondary">Collectibles</a></li>
+            <li><a href="#" class="text-secondary">Domain Name</a></li>
+            <li><a href="#" class="text-secondary">Utility</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-bold mb-3">Statistic</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-secondary">Ranking</a></li>
+            <li><a href="#" class="text-secondary">Activity</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-bold mb-3">Resource</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-secondary">Help Center</a></li>
+            <li><a href="#" class="text-secondary">Platform Status</a></li>
+            <li><a href="#" class="text-secondary">Partners</a></li>
+            <li><a href="#" class="text-secondary">Blog</a></li>
+            <li><a href="#" class="text-secondary">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6 class="fw-bold mb-3">Company</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-secondary">About Us</a></li>
+            <li><a href="#" class="text-secondary">Career</a></li>
+            <li><a href="#" class="text-secondary">Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="small text-secondary mb-0">Copyright © MetaSpace 2022</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+  <script>
+    AOS.init({ duration: 900, once: true });
+    anime({
+      targets: '#loginCard',
+      opacity: [0, 1],
+      scale: [0.92, 1],
+      rotateZ: [-8, 0],
+      duration: 700,
+      delay: 100,
+      easing: 'spring(1, 80, 10, 0)'
+    });
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('loginEmail').value.trim();
+      const password = document.getElementById('loginPassword').value.trim();
+      if (!email || !password) {
+        Swal.fire({ icon: 'error', title: 'Error', text: 'Please fill in all fields!' });
+        return;
+      }
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+        Swal.fire({ icon: 'error', title: 'Invalid Email', text: 'Please enter a valid email address.' });
+        return;
+      }
+      if (password.length < 6) {
+        Swal.fire({ icon: 'error', title: 'Weak Password', text: 'Password must be at least 6 characters.' });
+        return;
+      }
+      Swal.fire({ icon: 'success', title: 'Login Successful!', text: 'Welcome back to EnDasmu.' });
+      // Here you can add real authentication logic
+    });
+  </script>
+</body>
+</html> 
